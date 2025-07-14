@@ -67,13 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddProduct.aspx" />
     <Content Include="App_Data\DBNT.mdf" />
     <Content Include="App_Data\DBNT_log.ldf">
       <DependentUpon>DBNT.mdf</DependentUpon>
     </Content>
+    <Content Include="Css\addproduct.css" />
     <Content Include="Css\dashboard.css" />
     <Content Include="Css\default.css" />
     <Content Include="Css\login.css" />
+    <Content Include="Css\manageproduct.css" />
     <Content Include="Css\orders.css" />
     <Content Include="Css\purchase.css" />
     <Content Include="Css\register.css" />
@@ -82,6 +85,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="ManageProduct.aspx" />
     <Content Include="MyOrders.aspx" />
     <Content Include="PurchaseConfirm.aspx" />
     <Content Include="Register.aspx" />
@@ -89,6 +93,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +123,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageProduct.aspx.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageProduct.aspx.designer.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyOrders.aspx.cs">
       <DependentUpon>MyOrders.aspx</DependentUpon>

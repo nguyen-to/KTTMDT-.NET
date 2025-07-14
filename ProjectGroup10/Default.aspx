@@ -3,18 +3,23 @@
     <link href="<%= ResolveUrl("~/Css/default.css") %>" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <div class="page-header">
+  <div class="page-header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h1 class="page-title">Danh sách sản phẩm</h1>
                     <p class="text-muted">Khám phá các sản phẩm nội thất chất lượng cao</p>
                 </div>
-                <div class="col-md-4 text-end">
+                <div class="col-md-6 text-end">
                     <asp:Button ID="btnViewOrders" runat="server" 
                         CssClass="btn btn-orders" 
                         Text="Sản phẩm đã mua" 
                         OnClick="btnViewOrders_Click" />
+                    <asp:Button ID="btnLogout" runat="server" 
+                        CssClass="btn btn-logout" 
+                        Text="Đăng xuất" 
+                        OnClick="btnLogout_Click" 
+                        />
                 </div>
             </div>
         </div>
@@ -35,8 +40,7 @@
                     <div class="product-card">
                         <div class="product-image">
                            <asp:Image ID="Image1" runat="server" Width="200px"
-                             ImageUrl='<%# ResolveUrl("~/Images/" + Eval("imageUrl")) %>' />
-
+                             ImageUrl='<%# Eval("imageUrl") %>' />
                         </div>
                         <div class="product-name"><%# Eval("productName") %></div>
                         <div class="product-description"><%# Eval("description") %></div>
@@ -61,5 +65,4 @@
             </div>
         </asp:Panel>
     </div>
-
 </asp:Content>

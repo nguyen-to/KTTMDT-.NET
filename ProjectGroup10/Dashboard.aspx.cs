@@ -130,7 +130,14 @@ namespace ProjectGroup10
         {
             LoadOrders();
         }
-
+        protected void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddProduct.aspx");
+        }
+        protected void btnManageProduct_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ManageProduct.aspx");
+        }
         protected void rptOrders_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             if (e.CommandName == "UpdateStatus")
@@ -218,7 +225,32 @@ namespace ProjectGroup10
                 }
             }
         }
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Xóa tất cả session
+                Session.Clear();
+                Session.Abandon();
 
+                // Xóa cookies nếu có
+                if (Request.Cookies["UserInfo"] != null)
+                {
+                    HttpCookie cookie = new HttpCookie("UserInfo");
+                    cookie.Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies.Add(cookie);
+                }
+
+                // Chuyển hướng đến trang login
+                Response.Redirect("Login.aspx", false);
+                Context.ApplicationInstance.CompleteRequest();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                ShowMessage("Có lỗi xảy ra khi đăng xuất: " + ex.Message, "alert-danger");
+            }
+        }
         private void ShowMessage(string message, string type)
         {
             pnlMessage.Visible = true;

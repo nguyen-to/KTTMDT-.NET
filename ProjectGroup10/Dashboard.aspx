@@ -8,7 +8,13 @@
         <div class="container">
             <h1 class="dashboard-title">Admin Dashboard</h1>
             <p class="dashboard-subtitle">Quản lý đơn hàng và theo dõi hoạt động bán hàng</p>
+
         </div>
+        <asp:Button ID="btnLogout" runat="server" 
+            CssClass="btn btn-logout" 
+            Text="Đăng xuất" 
+            OnClick="btnLogout_Click" 
+        />
     </div>
 
     <div class="container">
@@ -86,6 +92,9 @@
                         <asp:TextBox ID="txtToDate" runat="server" CssClass="filter-select" TextMode="Date"></asp:TextBox>
                     </div>
                     <asp:Button ID="btnFilter" runat="server" CssClass="btn-filter" Text="Lọc" OnClick="btnFilter_Click" />
+                    <asp:Button ID="Button1" runat="server" CssClass="btn-filter" Text="Thêm Sản Phẩm" OnClick="btnAddProduct_Click" />
+                    <asp:Button ID="Button2" runat="server" CssClass="btn-filter" Text="Quản Lý Sản Phẩm" OnClick="btnManageProduct_Click" />
+
                 </div>
             </div>
 

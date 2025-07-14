@@ -11,9 +11,10 @@ namespace ProjectGroup10
 {
     public partial class PurchaseConfirm : System.Web.UI.Page
     {
-        SqlConnectionServer db = new SqlConnectionServer();
+        private SqlConnectionServer db = new SqlConnectionServer();
         private int productId;
-        private decimal productPrice;
+        private int productPrice;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             // Kiểm tra đăng nhập
@@ -29,10 +30,10 @@ namespace ProjectGroup10
                 Response.Redirect("Default.aspx");
                 return;
             }
-
+            LoadProductInfo();
             if (!IsPostBack)
             {
-                LoadProductInfo();
+                txtQuantity.Text = "1";
                 UpdateTotalAmount();
             }
         }
@@ -42,20 +43,27 @@ namespace ProjectGroup10
             try
             {
                 string query = "SELECT productName, price FROM Products WHERE productId = @ProductId";
-                SqlParameter[] parameters = {
-                    new SqlParameter("@ProductId", productId)
-                };
-
+                SqlParameter[] parameters = { new SqlParameter("@ProductId", productId) };
                 DataTable dt = db.ExecuteQuery(query, parameters);
 
                 if (dt.Rows.Count > 0)
                 {
                     DataRow row = dt.Rows[0];
                     lblProductName.Text = row["productName"].ToString();
-                    productPrice = Convert.ToDecimal(row["price"]);
 
-                    lblPrice.Text = string.Format("{0:N0}", productPrice);
+                    if (row["price"] != DBNull.Value)
+                    {
+                        productPrice = (int)row["price"];
+                        lblPrice.Text = string.Format("{0:N0} VNĐ", productPrice);
+                        ShowMessage($"Price {productPrice}", "danger");
+                    }
+                    else
+                    {
+                        ShowMessage("Giá sản phẩm bị thiếu!", "danger");
+                        btnConfirmPurchase.Enabled = false;
+                    }
                 }
+
                 else
                 {
                     ShowMessage("Không tìm thấy sản phẩm!", "danger");
@@ -64,55 +72,50 @@ namespace ProjectGroup10
             }
             catch (Exception ex)
             {
-                ShowMessage("Lỗi khi tải thông tin sản phẩm: " + ex.Message, "danger");
+                ShowMessage("Lỗi: " + ex.Message, "danger");
             }
         }
 
         private void UpdateTotalAmount()
         {
-            try
+            int quantity = GetQuantity();
+            int totalAmount = productPrice * quantity;
+            lblTotalAmount.Text = string.Format("{0:N0} VNĐ", totalAmount);
+        }
+
+        private int GetQuantity()
+        {
+            if (int.TryParse(txtQuantity.Text, out int quantity) && quantity >= 1 && quantity <= 999)
             {
-                int quantity = Convert.ToInt32(txtQuantity.Text);
-                decimal totalAmount = productPrice * quantity;
-                lblTotalAmount.Text = string.Format("{0:N0}", totalAmount);
+                return quantity;
             }
-            catch
-            {
-                lblTotalAmount.Text = "0";
-            }
+            txtQuantity.Text = "1";
+            return 1;
         }
 
         protected void btnIncrease_Click(object sender, EventArgs e)
         {
-            int currentQuantity = Convert.ToInt32(txtQuantity.Text);
+            int quantity = GetQuantity();
+            if (quantity < 999)
+            {
+                txtQuantity.Text = (quantity + 1).ToString();
+                UpdateTotalAmount();
+            }
         }
 
         protected void btnDecrease_Click(object sender, EventArgs e)
         {
-            int currentQuantity = Convert.ToInt32(txtQuantity.Text);
-            if (currentQuantity > 1)
+            int quantity = GetQuantity();
+            if (quantity > 1)
             {
-                txtQuantity.Text = (currentQuantity - 1).ToString();
+                txtQuantity.Text = (quantity - 1).ToString();
                 UpdateTotalAmount();
             }
         }
 
         protected void txtQuantity_TextChanged(object sender, EventArgs e)
         {
-            int quantity;
-            if (int.TryParse(txtQuantity.Text, out quantity))
-            {
-                if (quantity < 1)
-                {
-                    txtQuantity.Text = "1";
-                }
-                UpdateTotalAmount();
-            }
-            else
-            {
-                txtQuantity.Text = "1";
-                UpdateTotalAmount();
-            }
+            UpdateTotalAmount();
         }
 
         protected void btnConfirmPurchase_Click(object sender, EventArgs e)
@@ -120,41 +123,43 @@ namespace ProjectGroup10
             try
             {
                 int userId = Convert.ToInt32(Session["UserID"]);
-                int quantity = Convert.ToInt32(txtQuantity.Text);
-                decimal totalAmount = productPrice * quantity;
+                int quantity = GetQuantity();
+                int totalAmount = productPrice * quantity;
+                Response.Write("Giá sản phẩm là: " + productPrice);
+                Response.Write("Tỏng số là: " + totalAmount);
+                string query = @"INSERT INTO Orders (userId, productId, quantity, price, totalAmount, orderDate, status) 
+                                VALUES (@UserId, @ProductId, @Quantity, @Price, @TotalAmount, @OrderDate, @Status)";
 
-                // Tạo đơn hàng
-                string insertQuery = @"INSERT INTO Orders (orderDate, totalAmount, quantity, price, productId, userId, status) 
-                                     VALUES (@OrderDate, @TotalAmount, @Quantity, @Price, @ProductId, @UserId, @Status)";
-
+                if(productPrice == 0 || totalAmount == 0)
+                {
+                    ShowMessage($"Đặt hàng thất bại! {productPrice } và {totalAmount}", "danger");
+                    return;
+                }    
                 SqlParameter[] parameters = {
-                    new SqlParameter("@OrderDate", DateTime.Now),
-                    new SqlParameter("@TotalAmount", totalAmount),
+                    new SqlParameter("@UserId", userId),
+                    new SqlParameter("@ProductId", productId),
                     new SqlParameter("@Quantity", quantity),
                     new SqlParameter("@Price", productPrice),
-                    new SqlParameter("@ProductId", productId),
-                    new SqlParameter("@UserId", userId),
-                    new SqlParameter("@Status", "pending")
+                    new SqlParameter("@TotalAmount", totalAmount),
+                    new SqlParameter("@OrderDate", DateTime.Now),
+                    new SqlParameter("@Status", "Pending")
                 };
 
-                int result = db.ExecuteNonQuery(insertQuery, parameters);
+                int result = db.ExecuteNonQuery(query, parameters);
 
                 if (result > 0)
                 {
-                    ShowMessage("Mua hàng thành công! Đơn hàng đang được xử lý.", "success");
+                    ShowMessage("Đặt hàng thành công!", "success");
                     btnConfirmPurchase.Enabled = false;
-
-                    // Chuyển hướng sau 2 giây
-                    Response.AddHeader("REFRESH", "2;URL=MyOrders.aspx");
                 }
                 else
                 {
-                    ShowMessage("Có lỗi xảy ra khi tạo đơn hàng!", "danger");
+                    ShowMessage("Đặt hàng thất bại!", "danger");
                 }
             }
             catch (Exception ex)
             {
-                ShowMessage("Lỗi khi xử lý đơn hàng: " + ex.Message, "danger");
+                ShowMessage("Lỗi: " + ex.Message, "danger");
             }
         }
 
@@ -168,25 +173,6 @@ namespace ProjectGroup10
             pnlMessage.Visible = true;
             lblMessage.Text = message;
             divAlert.Attributes["class"] = $"alert alert-{type}";
-
-            string icon = "";
-            switch (type)
-            {
-                case "success":
-                    icon = "<i class='fas fa-check-circle'></i> ";
-                    break;
-                case "danger":
-                    icon = "<i class='fas fa-exclamation-triangle'></i> ";
-                    break;
-                case "warning":
-                    icon = "<i class='fas fa-exclamation-circle'></i> ";
-                    break;
-                case "info":
-                    icon = "<i class='fas fa-info-circle'></i> ";
-                    break;
-            }
-
-            lblMessage.Text = icon + message;
         }
     }
 }

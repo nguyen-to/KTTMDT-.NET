@@ -70,6 +70,45 @@ namespace ProjectGroup10
                 Response.Redirect($"PurchaseConfirm.aspx?productId={productId}");
             }
         }
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Xóa tất cả session
+                Session.Clear();
+                Session.Abandon();
+
+                // Xóa cookies nếu có
+                if (Request.Cookies["UserInfo"] != null)
+                {
+                    HttpCookie cookie = new HttpCookie("UserInfo");
+                    cookie.Expires = DateTime.Now.AddDays(-1);
+                    Response.Cookies.Add(cookie);
+                }
+
+                // Chuyển hướng đến trang login
+                Response.Redirect("Login.aspx", false);
+                Context.ApplicationInstance.CompleteRequest();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu có
+                ShowMessage("Có lỗi xảy ra khi đăng xuất: " + ex.Message, "alert-danger");
+            }
+        }
+        protected string GetProductImageUrl(object imageUrl)
+        {
+            string imagePath = imageUrl.ToString();
+
+            // Nếu là URL đầy đủ (http/https)
+            if (imagePath.StartsWith("http://") || imagePath.StartsWith("https://"))
+            {
+                return imagePath;
+            }
+
+            // Nếu là đường dẫn local
+            return ResolveUrl("~/Image/" + imagePath);
+        }
 
         private void ShowMessage(string message, string type)
         {
