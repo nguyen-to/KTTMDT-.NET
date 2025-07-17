@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\sqlconnectionserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\sqlconnectionserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\runningwebform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\runningwebform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SqlConnectionServer.cs",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\SqlConnectionServer.cs",
+              "RelativeDocumentMoniker": "ProjectGroup10\\SqlConnectionServer.cs",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\SqlConnectionServer.cs",
+              "RelativeToolTip": "ProjectGroup10\\SqlConnectionServer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T05:28:14.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RunningWebform.aspx",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\RunningWebform.aspx",
               "RelativeDocumentMoniker": "ProjectGroup10\\RunningWebform.aspx",

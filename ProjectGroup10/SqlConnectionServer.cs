@@ -9,12 +9,11 @@ namespace ProjectGroup10
 {
     public class SqlConnectionServer
     {
-        string connect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Study\KTTMDT\Project\ProjectGroup10\ProjectGroup10\App_Data\DBNT.mdf;Integrated Security=True";
+        string path = HttpContext.Current.Server.MapPath("~/App_Data/DBNT.mdf");
         SqlConnection SqlConnection;
-
         public SqlConnectionServer()
         {
-            SqlConnection = new SqlConnection(connect);
+            SqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + path + ";Integrated Security=True");
         }
 
         // Phương thức ExecuteNonQuery - dùng cho INSERT, UPDATE, DELETE
