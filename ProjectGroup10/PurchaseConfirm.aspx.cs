@@ -30,10 +30,16 @@ namespace ProjectGroup10
                 Response.Redirect("Default.aspx");
                 return;
             }
-            LoadProductInfo();
             if (!IsPostBack)
             {
-                txtQuantity.Text = "1";
+                LoadProductInfo();
+
+                // Nếu có quantity từ cart, set quantity mặc định
+                if (int.TryParse(Request.QueryString["quantity"], out int cartQuantity))
+                {
+                    txtQuantity.Text = cartQuantity.ToString();
+                }
+
                 UpdateTotalAmount();
             }
         }
@@ -55,7 +61,6 @@ namespace ProjectGroup10
                     {
                         productPrice = (int)row["price"];
                         lblPrice.Text = string.Format("{0:N0} VNĐ", productPrice);
-                        ShowMessage($"Price {productPrice}", "danger");
                     }
                     else
                     {
@@ -123,46 +128,53 @@ namespace ProjectGroup10
             try
             {
                 int userId = Convert.ToInt32(Session["UserID"]);
-                int quantity = GetQuantity();
-                int totalAmount = productPrice * quantity;
-                Response.Write("Giá sản phẩm là: " + productPrice);
-                Response.Write("Tỏng số là: " + totalAmount);
-                string query = @"INSERT INTO Orders (userId, productId, quantity, price, totalAmount, orderDate, status) 
-                                VALUES (@UserId, @ProductId, @Quantity, @Price, @TotalAmount, @OrderDate, @Status)";
+                int quantity = Convert.ToInt32(txtQuantity.Text);
+                decimal totalAmount = productPrice * quantity;
 
-                if(productPrice == 0 || totalAmount == 0)
-                {
-                    ShowMessage($"Đặt hàng thất bại! {productPrice } và {totalAmount}", "danger");
-                    return;
-                }    
+                // Tạo đơn hàng
+                string insertQuery = @"INSERT INTO Orders (orderDate, totalAmount, quantity, price, productId, userId, status) 
+                             VALUES (@OrderDate, @TotalAmount, @Quantity, @Price, @ProductId, @UserId, @Status)";
+
                 SqlParameter[] parameters = {
-                    new SqlParameter("@UserId", userId),
-                    new SqlParameter("@ProductId", productId),
+                    new SqlParameter("@OrderDate", DateTime.Now),
+                    new SqlParameter("@TotalAmount", totalAmount),
                     new SqlParameter("@Quantity", quantity),
                     new SqlParameter("@Price", productPrice),
-                    new SqlParameter("@TotalAmount", totalAmount),
-                    new SqlParameter("@OrderDate", DateTime.Now),
-                    new SqlParameter("@Status", "Pending")
+                    new SqlParameter("@ProductId", productId),
+                    new SqlParameter("@UserId", userId),
+                    new SqlParameter("@Status", "pending")
                 };
 
-                int result = db.ExecuteNonQuery(query, parameters);
+                int result = db.ExecuteNonQuery(insertQuery, parameters);
 
                 if (result > 0)
                 {
-                    ShowMessage("Đặt hàng thành công!", "success");
+                    // Xóa sản phẩm khỏi giỏ hàng nếu có cartId
+                    if (int.TryParse(Request.QueryString["cartId"], out int cartId))
+                    {
+                        string deleteCartQuery = "DELETE FROM Carts WHERE cartId = @CartId";
+                        SqlParameter[] deleteParams = {
+                        new SqlParameter("@CartId", cartId)
+                        };
+                        db.ExecuteNonQuery(deleteCartQuery, deleteParams);
+                    }
+
+                    ShowMessage("Mua hàng thành công! Đơn hàng đang được xử lý.", "success");
                     btnConfirmPurchase.Enabled = false;
+
+                    // Chuyển hướng sau 2 giây
+                    Response.AddHeader("REFRESH", "1;URL=MyOrders.aspx");
                 }
                 else
                 {
-                    ShowMessage("Đặt hàng thất bại!", "danger");
+                    ShowMessage("Có lỗi xảy ra khi tạo đơn hàng!", "danger");
                 }
             }
             catch (Exception ex)
             {
-                ShowMessage("Lỗi: " + ex.Message, "danger");
+                ShowMessage("Lỗi khi xử lý đơn hàng: " + ex.Message, "danger");
             }
         }
-
         protected void btnCancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");

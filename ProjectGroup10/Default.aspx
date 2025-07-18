@@ -11,6 +11,10 @@
                     <p class="text-muted">Khám phá các sản phẩm nội thất chất lượng cao</p>
                 </div>
                 <div class="col-md-6 text-end">
+                    <asp:Button ID="btnViewCarts" runat="server" 
+                        CssClass="btn-carts" 
+                        Text="Giỏ Hàng" 
+                        OnClick="btnViewCarts_Click" />
                     <asp:Button ID="btnViewOrders" runat="server" 
                         CssClass="btn btn-orders" 
                         Text="Sản phẩm đã mua" 
@@ -45,12 +49,21 @@
                         <div class="product-name"><%# Eval("productName") %></div>
                         <div class="product-description"><%# Eval("description") %></div>
                         <div class="product-price"><%# String.Format("{0:N0}", Eval("price")) %> VNĐ</div>
-                        <asp:Button ID="btnBuy" runat="server" 
-                            CssClass="btn btn-buy" 
-                            Text="Mua hàng" 
-                            CommandName="BuyProduct" 
-                            CommandArgument='<%# Eval("productId") %>'
-                             />
+                        <div class="product-buttonCart">
+
+                            <asp:Button ID="btnBuy" runat="server" 
+                                CssClass="btn btn-buy" 
+                                Text="Mua hàng" 
+                                CommandName="BuyProduct" 
+                                CommandArgument='<%# Eval("productId") %>'
+                                 />
+                            <asp:Button ID="Button1" runat="server" 
+                                CssClass="btn btn-buy btn-cart" 
+                                Text="Thêm" 
+                                CommandName="CartProduct" 
+                                CommandArgument='<%# Eval("productId") %>'
+                                 />
+                        </div>
                     </div>
                 </ItemTemplate>
             </asp:Repeater>

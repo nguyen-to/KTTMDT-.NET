@@ -72,7 +72,9 @@
     <Content Include="App_Data\DBNT_log.ldf">
       <DependentUpon>DBNT.mdf</DependentUpon>
     </Content>
+    <Content Include="Carts.aspx" />
     <Content Include="Css\addproduct.css" />
+    <Content Include="Css\carts.css" />
     <Content Include="Css\dashboard.css" />
     <Content Include="Css\default.css" />
     <Content Include="Css\login.css" />
@@ -99,6 +101,13 @@
     </Compile>
     <Compile Include="AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carts.aspx.cs">
+      <DependentUpon>Carts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carts.aspx.designer.cs">
+      <DependentUpon>Carts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
