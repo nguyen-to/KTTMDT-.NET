@@ -3,39 +3,71 @@
   "WorkspaceRootPath": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\purchaseconfirm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\purchaseconfirm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\carts.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\carts.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\runningwebform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\runningwebform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\addproduct.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\addproduct.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\purchaseconfirm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\purchaseconfirm.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\css\\default.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\css\\default.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\carts.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\carts.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\carts.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\projectmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\addproduct.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\addproduct.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\css\\addproduct.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\css\\addproduct.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\purchaseconfirm.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\purchaseconfirm.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\carts.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\carts.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\css\\default.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\css\\default.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\projectmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\projectmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|t:\\study\\kttmdt\\project\\projectgroup10\\projectgroup10\\projectmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "AbsoluteMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\projectgroup10\\projectmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{6E2FFA49-6FFF-4B96-93A1-CF490ABD4B8C}|ProjectGroup10\\ProjectGroup10.csproj|solutionrelative:projectgroup10\\projectmaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
@@ -51,32 +83,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PurchaseConfirm.aspx.cs",
-              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx.cs",
-              "RelativeDocumentMoniker": "ProjectGroup10\\PurchaseConfirm.aspx.cs",
-              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx.cs",
-              "RelativeToolTip": "ProjectGroup10\\PurchaseConfirm.aspx.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAYwL0AAAABAAAAAAAAAA==",
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectGroup10\\Login.aspx.cs",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Login.aspx.cs",
+              "RelativeToolTip": "ProjectGroup10\\Login.aspx.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T14:04:44.243Z",
+              "WhenOpened": "2025-07-19T14:12:59.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Login.aspx",
+              "RelativeDocumentMoniker": "ProjectGroup10\\Login.aspx",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Login.aspx",
+              "RelativeToolTip": "ProjectGroup10\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-19T14:12:45.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "addproduct.css",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Css\\addproduct.css",
+              "RelativeDocumentMoniker": "ProjectGroup10\\Css\\addproduct.css",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Css\\addproduct.css",
+              "RelativeToolTip": "ProjectGroup10\\Css\\addproduct.css",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAIwKoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-19T13:48:19.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddProduct.aspx.cs",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\AddProduct.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectGroup10\\AddProduct.aspx.cs",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\AddProduct.aspx.cs",
+              "RelativeToolTip": "ProjectGroup10\\AddProduct.aspx.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:47:24.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "AddProduct.aspx",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\AddProduct.aspx",
+              "RelativeDocumentMoniker": "ProjectGroup10\\AddProduct.aspx",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\AddProduct.aspx",
+              "RelativeToolTip": "ProjectGroup10\\AddProduct.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-19T13:44:05.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PurchaseConfirm.aspx.cs",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx.cs",
+              "RelativeDocumentMoniker": "ProjectGroup10\\PurchaseConfirm.aspx.cs",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx.cs",
+              "RelativeToolTip": "ProjectGroup10\\PurchaseConfirm.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-19T13:38:41.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PurchaseConfirm.aspx",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx",
+              "RelativeDocumentMoniker": "ProjectGroup10\\PurchaseConfirm.aspx",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\PurchaseConfirm.aspx",
+              "RelativeToolTip": "ProjectGroup10\\PurchaseConfirm.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-19T13:38:30.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Css\\dashboard.css",
+              "RelativeDocumentMoniker": "ProjectGroup10\\Css\\dashboard.css",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Css\\dashboard.css",
+              "RelativeToolTip": "ProjectGroup10\\Css\\dashboard.css",
+              "ViewState": "AgIAABoBAAAAAAAAAAAAACgBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-19T13:36:39.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "ProjectGroup10\\Dashboard.aspx",
+              "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Dashboard.aspx",
+              "RelativeToolTip": "ProjectGroup10\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-07-19T13:35:53.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Carts.aspx.cs",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Carts.aspx.cs",
               "RelativeDocumentMoniker": "ProjectGroup10\\Carts.aspx.cs",
               "ToolTip": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Carts.aspx.cs",
               "RelativeToolTip": "ProjectGroup10\\Carts.aspx.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAuwAABAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-18T13:59:44.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Carts.aspx",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Carts.aspx",
               "RelativeDocumentMoniker": "ProjectGroup10\\Carts.aspx",
@@ -84,12 +220,11 @@
               "RelativeToolTip": "ProjectGroup10\\Carts.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-07-18T13:56:58.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:56:58.262Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "ProjectMaster.Master",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\ProjectMaster.Master",
               "RelativeDocumentMoniker": "ProjectGroup10\\ProjectMaster.Master",
@@ -102,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "ProjectMaster.Master.cs",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\ProjectMaster.Master.cs",
               "RelativeDocumentMoniker": "ProjectGroup10\\ProjectMaster.Master.cs",
@@ -110,12 +245,11 @@
               "RelativeToolTip": "ProjectGroup10\\ProjectMaster.Master.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T13:37:14.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:37:14.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "default.css",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Css\\default.css",
               "RelativeDocumentMoniker": "ProjectGroup10\\Css\\default.css",
@@ -123,12 +257,11 @@
               "RelativeToolTip": "ProjectGroup10\\Css\\default.css",
               "ViewState": "AgIAAJYAAAAAAAAAAAAAALEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-18T13:22:39.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:22:39.358Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Default.aspx.cs",
               "RelativeDocumentMoniker": "ProjectGroup10\\Default.aspx.cs",
@@ -136,12 +269,11 @@
               "RelativeToolTip": "ProjectGroup10\\Default.aspx.cs",
               "ViewState": "AgIAANoAAAAAAAAAAAAgwOoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T13:19:57.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:19:57.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Default.aspx",
               "DocumentMoniker": "T:\\Study\\KTTMDT\\Project\\ProjectGroup10\\ProjectGroup10\\Default.aspx",
               "RelativeDocumentMoniker": "ProjectGroup10\\Default.aspx",
@@ -149,8 +281,7 @@
               "RelativeToolTip": "ProjectGroup10\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-07-18T13:19:34.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-18T13:19:34.322Z"
             },
             {
               "$type": "Document",

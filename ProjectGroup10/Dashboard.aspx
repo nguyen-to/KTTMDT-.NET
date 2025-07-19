@@ -92,8 +92,8 @@
                         <asp:TextBox ID="txtToDate" runat="server" CssClass="filter-select" TextMode="Date"></asp:TextBox>
                     </div>
                     <asp:Button ID="btnFilter" runat="server" CssClass="btn-filter" Text="Lọc" OnClick="btnFilter_Click" />
-                    <asp:Button ID="Button1" runat="server" CssClass="btn-filter" Text="Thêm Sản Phẩm" OnClick="btnAddProduct_Click" />
-                    <asp:Button ID="Button2" runat="server" CssClass="btn-filter" Text="Quản Lý Sản Phẩm" OnClick="btnManageProduct_Click" />
+                    <asp:Button ID="Button1" runat="server" CssClass="btn-filter them" Text="Thêm Sản Phẩm" OnClick="btnAddProduct_Click" />
+                    <asp:Button ID="Button2" runat="server" CssClass="btn-filter quanly" Text="Quản Lý Sản Phẩm" OnClick="btnManageProduct_Click" />
 
                 </div>
             </div>

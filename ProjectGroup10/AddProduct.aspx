@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ProjectMaster.Master" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="ProjectGroup10.AddProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="<%= ResolveUrl("~/Css/dashboard.css") %>" rel="stylesheet" type="text/css" />
-
+    <link href="<%= ResolveUrl("~/Css/addproduct.css") %>" rel="stylesheet" type="text/css" />
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="page-header">
+   <div class="page-header">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -84,7 +84,6 @@
                             </asp:RangeValidator>
                         </div>
                     </div>
-                    
                 </div>
 
                 <div class="form-group">
@@ -95,12 +94,12 @@
                 <div class="form-group">
                     <label class="form-label">URL hình ảnh</label>
                     <asp:TextBox ID="txtImageUrl" runat="server" CssClass="form-control" placeholder="Nhập URL hình ảnh sản phẩm" MaxLength="200"></asp:TextBox>
-                    <div class="image-preview">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image fa-2x"></i>
-                            <p>Xem trước hình ảnh</p>
-                        </div>
+                    
+                    <button type="button" class="btn-preview" onclick="previewImage()">Xem trước</button>
+                    
+                    <div id="placeholder" class="image-preview-container" >
                     </div>
+                        <img id="previewImg" class="preview-image" />
                 </div>
             </div>
 
@@ -111,4 +110,31 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function previewImage() {
+            var url = document.getElementById('<%= txtImageUrl.ClientID %>').value;
+            var img = document.getElementById('previewImg');
+            var placeholder = document.getElementById('placeholder');
+
+            if (url.trim() === '') {
+                img.style.display = 'none';
+                placeholder.style.display = 'block';
+                return;
+            }
+
+            img.onload = function () {
+                placeholder.style.display = 'none';
+                img.style.display = 'block';
+            };
+
+            img.onerror = function () {
+                placeholder.style.display = 'block';
+                img.style.display = 'none';
+                alert('Không thể tải hình ảnh. Vui lòng kiểm tra lại URL.');
+            };
+
+            img.src = url;
+        }
+    </script>
 </asp:Content>

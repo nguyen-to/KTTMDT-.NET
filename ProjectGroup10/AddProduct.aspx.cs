@@ -16,11 +16,12 @@ namespace ProjectGroup10
         protected void Page_Load(object sender, EventArgs e)
         {
             // Kiểm tra đăng nhập và quyền admin
-            if (Session["UserID"] == null || Session["Role"]?.ToString() != "Admin")
+            if (Session["UserID"] == null)
             {
-                Response.Redirect("~/Login.aspx");
+                Response.Redirect("RunningWebform.aspx");
                 return;
             }
+
             if (!IsPostBack)
             {
                 LoadCategories();

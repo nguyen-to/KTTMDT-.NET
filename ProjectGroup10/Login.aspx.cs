@@ -40,8 +40,6 @@ namespace ProjectGroup10
                         Session["FullName"] = userRow["FullName"];
                         Session["Role"] = userRow["Role"];
 
-                        // Hiển thị thông báo thành công
-                        ShowMessage("Đăng nhập thành công! Đang chuyển hướng...", "success");
 
                         // Chuyển hướng dựa trên role
                         if (userRow["Role"].ToString() == "Admin")

@@ -30,8 +30,6 @@ namespace ProjectGroup10
                 Response.Redirect("Default.aspx");
                 return;
             }
-            if (!IsPostBack)
-            {
                 LoadProductInfo();
 
                 // Nếu có quantity từ cart, set quantity mặc định
@@ -40,8 +38,7 @@ namespace ProjectGroup10
                     txtQuantity.Text = cartQuantity.ToString();
                 }
 
-                UpdateTotalAmount();
-            }
+            UpdateTotalAmount();
         }
 
         private void LoadProductInfo()

@@ -290,3 +290,9 @@
         grid-template-columns: 1fr;
     }
 }
+.them {
+    background-color: #395de7;
+}
+.quanly {
+    background-color: #e35623;
+}

@@ -16,11 +16,11 @@ namespace ProjectGroup10
         protected void Page_Load(object sender, EventArgs e)
         {
             // Kiểm tra đăng nhập
-            //if (Session["UserID"] == null)
-            //{
-            //    Response.Redirect("Login.aspx");
-            //    return;
-            //}
+            if (Session["UserID"] == null)
+            {
+                Response.Redirect("Login.aspx");
+                return;
+            }
 
             if (!IsPostBack)
             {
